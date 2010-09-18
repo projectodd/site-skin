@@ -28,11 +28,13 @@ layout: base
         = partial( 'bottom-nav.html.haml' )
         #bottom-right
           #legal
-            The #{site.title} project is a member of the 
-            <a href="http://jboss.org/">JBoss Community</a> and
-            produced by <a href="http://projectodd.org/">Project:odd</a>.
-            Copyright 2009-2010 <a href="http://redhat.com/">Red Hat, Inc.</a>
-            #{site.title} is a trademark of Red Hat, Inc.
+            %p
+              The #{site.title} project is a member of the 
+              <a href="http://jboss.org/">JBoss Community</a> and
+              produced by the <a href="http://projectodd.org/">Project:odd</a> team.
+            %p
+              Copyright 2009-2010 <a href="http://redhat.com/">Red Hat, Inc.</a>
+              #{site.title}&trade; is a trademark of Red Hat, Inc.
           #badges
             %a{:href=>'http://jboss.org/'}
               %img#jbosscommunity-logo{ :src=>'/images/jbosscommunity-logo.png' }

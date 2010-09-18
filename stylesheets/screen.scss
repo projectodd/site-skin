@@ -46,7 +46,7 @@ body.bp {
   }
   #footer-bar {
     margin-top: 4em;
-    padding-bottom: 1ex;
+    padding-bottom: 2em;
     padding-top: 0px;
     margin-bottom: 2em;
     background-color: $bar_background_color;
@@ -91,8 +91,11 @@ body.bp {
       }
       #badges a {
         display: block;
+        float: left;
+        margin-right: 20px;
         img#jbosscommunity-logo, img#projectodd-logo {
-          width: 200px;
+          width: 130px;
+          margin-bottom: 20px;
         }
       }
     
@@ -149,15 +152,16 @@ body.bp {
     }
     h1, h2, .size {
       font-weight: bold;
+      font-size: 110%;
     }
     #download-link {
       font-weight: bold;
-      font-size: 200%;
+      font-size: 140%;
       display: block;
-      margin-top: 1em;
+      margin-bottom: 1em;
+      color: $color_dark + #222;
     }
     .links {
-      margin-top: 2em;
     }
   }
 }
