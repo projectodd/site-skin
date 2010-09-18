@@ -27,7 +27,6 @@ form.bp {
 }
 
 body.bp {
-  font-family: 'Trebuchet MS',Verdana,sans-serif;
   #nav-wrapper, #header-wrapper, #footer-wrapper, #primary-wrapper {
     @include container;
   }
@@ -75,6 +74,9 @@ body.bp {
   margin-top: 1em;
 
   #bottom-nav {
+    a {
+      text-decoration: none;
+    }
     #bottom-left {
       @include column(8);
     }
