@@ -1,3 +1,4 @@
+require 'rss_widget'
 
 Awestruct::Extensions::Pipeline.new do
   extension Awestruct::Extensions::Posts.new('/news')
@@ -8,5 +9,6 @@ Awestruct::Extensions::Pipeline.new do
 
   helper Awestruct::Extensions::GoogleAnalytics
   helper Awestruct::Extensions::Partial
+  helper RssWidget
 end
 
