@@ -381,3 +381,24 @@ form {
     }
   }
 }
+
+#latest-jiras, #latest-git {
+  ul {
+    font-size: 80%;
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+
+    li {
+      margin-bottom: 1em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #999;
+    }
+    h4 {
+      display: inline;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
