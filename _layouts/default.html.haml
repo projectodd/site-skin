@@ -15,9 +15,12 @@ layout: base
   #primary-container
     - unless page.inhibit_title 
       %h1.page-title
-        - if page.section 
-          %a{:href=>"/#{page.section.downcase}/"} #{page.section}
-          \:
+        - sections = page.section ? [page.section] : page.sections
+        - if sections
+          - sections.each_with_index do |section, index|
+            - path = sections[0, index+1].join("/").downcase.gsub(' ', '_')
+            %a{:href=>"/#{path}/"} #{section}
+            \:
         #{page.title}
     #primary-content
       ~ content
